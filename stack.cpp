@@ -12,8 +12,7 @@ private:
   int* m_arr;
 };
 
-Stack::Stack() : m_size{ 0 }, m_cap{ 0 }, m_arr{ nullptr }{
-}
+Stack::Stack() : m_size{ 0 }, m_cap{ 0 }, m_arr{ nullptr } {}
 
 void Stack::push(int elem) {
   if (m_size == m_cap) {
@@ -31,7 +30,6 @@ void Stack::push(int elem) {
 
     m_arr = tmp;
   }
-
   m_arr[m_size++] = elem;
 }
 
@@ -43,7 +41,6 @@ void Stack::pop() {
 }
 
 int Stack::top() {
-
   return m_arr[m_size - 1];
 }
 
